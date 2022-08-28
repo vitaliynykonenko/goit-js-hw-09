@@ -13,11 +13,12 @@ buttonStartColor.addEventListener('click', () => {
   }, 1000);
 
   buttonStartColor.disabled = true;
+  buttonStopColor.disabled = false;
 });
 
 buttonStopColor.addEventListener('click', () => {
     clearInterval(timerId);
-    
+    buttonStopColor.disabled = true;
     buttonStartColor.disabled = false;    
 });
 

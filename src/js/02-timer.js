@@ -54,11 +54,13 @@ function addLeadingZero(value) {
 
 buttonStart.addEventListener('click', () => { 
   let timerId = null;
-  
+  buttonStart.disabled = true;
   function countdownTimer() { 
     const diff = new Date(libraryFlatpickr.value) - new Date();
     if (diff < 0) { 
       clearInterval(timerId);
+      buttonStart.disabled = false;
+      Notiflix.Notify.success(`Timer is successful finished!`);
       return;    
     }
 
