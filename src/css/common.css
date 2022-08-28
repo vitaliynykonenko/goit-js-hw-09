@@ -16,3 +16,33 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* .value, .label {
+color: violet;
+
+} */
+
+/* .field {
+  border: 2px solid;
+  border-color: tomato;
+  font-size: 24px;
+margin-bottom: 10px;
+} */
+
+.timer {
+  display: flex;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.value {
+  padding: 0px 5px;
+  margin-right: 10px;
+  border: 2px solid;
+  border-radius: 6px;
+  border-color: red;
+}
+
+.label {
+  margin-right: 10px;
+  
+}
